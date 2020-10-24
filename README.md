@@ -32,8 +32,14 @@ PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]$ym << ";fi)\[\033[1;32
 export HOME=$HOME/../..$HOME
 PS1='\[\033[32;1m\](\t)-$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)-";fi)\[\033[1;32;1m\](\W)\[\033[35m\] 》\[\033[00m\]'
 ```
-
 <img src=".img/glowin5.png">
+
+```bash
+export HOME=$HOME/../..$HOME
+PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)-";fi)\[\033[1;32;1m\](\t)-(\W)\[\033[35m\] 》\[\033[00m\]'
+```
+
+<img src=".img/glowin6.png">
 
 ```bash
 export HOME=$HOME/../..$HOME
