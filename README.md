@@ -35,3 +35,10 @@ export HOME=/home/<USER>/../<USER>
 PS1='$(if [ $? -ne 0 ];then printf "\[\033[31;1m\](\W)";else printf "\[\033[1;32;1m\](\W)";fi)\[\033[35m\] 》\[\033[00m\]'
 ```
 
+### Airline 
+```bash
+export HOME=/home/<USER>/../<USER>
+END=""
+PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[41m\]\[\033[37;1m\]$ym\[\033[0m\]\[\033[31;1m\]\[\033[44m\]$END";fi)\[\033[44m\]\[\033[37;1m\]\W\[\033[0m\]\[\033[34m\]$END\[\033[00m\] '
+```
+
