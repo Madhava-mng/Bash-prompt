@@ -69,7 +69,23 @@ END=""
 PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[41m\]\[\033[37;1m\]$ym\[\033[0m\]\[\033[31;1m\]\[\033[45m\]$END";fi)\[\033[45m\]\[\033[37;1m\]\W\[\033[0m\]\[\033[35m\]$END\[\033[00m\] '
 ```
 
-### Powerline 
+<img src=".img/airline4.png">
+
+```bash
+export HOME=$HOME/../..$HOME
+END=""
+PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[41m\]\[\033[37m\]$ym\[\033[0m\]\[\033[31m\]\[\033[46m\]$END";fi)\[\033[46m\]\[\033[37m\]\u\[\033[36m\]\[\033[45m\]$END\[\033[45m\]\[\033[37m\]\h\[\033[0m\]\[\033[35m\]\[\033[44m\]$END\[\033[37m\]\W\[\033[0m\]\[\033[34m\]$END\[\033[0m\] '
+```
+
+<img src=".img/airline5.png">
+
+```bash
+export HOME=$HOME/../..$HOME
+END=""
+PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[41m\]\[\033[37m\]$ym\[\033[0m\]\[\033[31m\]\[\033[46m\]$END";fi)\[\033[46m\]\[\033[37m\]\u\[\033[36m\]\[\033[45m\]$END\[\033[45m\]\[\033[37m\]\h\[\033[0m\]\[\033[35m\]\[\033[44m\]$END\[\033[37m\]\w\[\033[0m\]\[\033[34m\]$END\[\033[0m\] '
+```
+
+### Powerline
 <img src=".img/powerline1.png">
 
 ```bash
@@ -91,15 +107,28 @@ export HOME=$HOME/../..$HOME
 END="▶"
 PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[41m\]\[\033[37;1m\]$ym\[\033[0m\]\[\033[31;1m\]\[\033[45m\]$END";fi)\[\033[45m\]\[\033[37;1m\]\W\[\033[0m\]\[\033[35m\]$END\[\033[00m\] '
 ```
+<img src=".img/powerline4.png">
+
+```bash
+export HOME=$HOME/../..$HOME
+END="▶"
+PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[41m\]\[\033[37m\]$ym\[\033[0m\]\[\033[31m\]\[\033[46m\]$END";fi)\[\033[46m\]\[\033[37m\]\u\[\033[36m\]\[\033[45m\]$END\[\033[45m\]\[\033[37m\]\h\[\033[0m\]\[\033[35m\]\[\033[44m\]$END\[\033[37m\]\W\[\033[0m\]\[\033[34m\]$END\[\033[0m\] '
+```
+<img src=".img/powerline5.png">
+
+```bash
+export HOME=$HOME/../..$HOME
+END="▶"
+PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[41m\]\[\033[37m\]$ym\[\033[0m\]\[\033[31m\]\[\033[46m\]$END";fi)\[\033[46m\]\[\033[37m\]\u\[\033[36m\]\[\033[45m\]$END\[\033[45m\]\[\033[37m\]\h\[\033[0m\]\[\033[35m\]\[\033[44m\]$END\[\033[37m\]\w\[\033[0m\]\[\033[34m\]$END\[\033[0m\] '
+```
 
 
 
 
 
 
-
-                    GNU AFFERO GENERAL PUBLIC LICENSE
-                       Version 3, 19 November 2007
+                        GNU AFFERO GENERAL PUBLIC LICENSE
+                           Version 3, 19 November 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
