@@ -1,31 +1,35 @@
 # Bash-prompt
-bash prompts orignal and duplicates 
+bash prompts orignal and duplicates
 ### NOTE
       1) open  ~/.bashrc
       2) past the particular code at the end of the "~/.bashrc" file
-      
-### Glowin 
+
+### Glowin
+<img src=".img/glowin1.png">
 ```bash
-# Glowin-basic from Bash-prompt 
+# Glowin-basic from Bash-prompt
 export HOME=$HOME/../..$HOME
 PS1='\[\033[32;1m\]($(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]$ym ";fi)\[\033[1;32;1m\]\W)\[\033[35m\] 》\[\033[00m\]'
 ```
-
+<img src=".img/glowin2.png">
 ```bash
 export HOME=$HOME/../..$HOME
 PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)";fi)\[\033[1;34;1m\](\W)\[\033[35m\] 》\[\033[00m\]'
 ```
 
+<img src=".img/glowin3.png">
 ```bash
 export HOME=$HOME/../..$HOME
 PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]$ym << ";fi)\[\033[1;32;1m\](\W)\[\033[35m\] 》\[\033[00m\]'
 ```
 
+<img src=".img/glowin4.png">
 ```bash
 export HOME=$HOME/../..$HOME
 PS1='\[\033[32;1m\](\t)-$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)-";fi)\[\033[1;32;1m\](\W)\[\033[35m\] 》\[\033[00m\]'
 ```
 
+<img src=".img/glowin5.png">
 ```bash
 export HOME=$HOME/../..$HOME
 PS1='$(if [ $? -ne 0 ];then printf "\[\033[31;1m\](\W)";else printf "\[\033[1;32;1m\](\W)";fi)\[\033[35m\] 》\[\033[00m\]'
