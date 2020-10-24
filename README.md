@@ -1,5 +1,6 @@
 # Bash-prompt
-bash prompts orignal and duplicates
+bash intrActive FantaC PromptS
+
 ### NOTE
       1) open  ~/.bashrc
       2) past the particular code at the end of the "~/.bashrc" file
@@ -10,43 +11,43 @@ bash prompts orignal and duplicates
 ```bash
 # Glowin-basic from Bash-prompt
 export HOME=$HOME/../..$HOME
-PS1='\[\033[32;1m\]($(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]$ym ";fi)\[\033[1;32;1m\]\W)\[\033[35m\] 》\[\033[00m\]'
+PS1='\[\033[32;1m\]($(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]$ym ";fi)\[\033[1;32;1m\]\W)\[\033[35m\]》\[\033[00m\]'
 ```
 <img src=".img/glowin2.png">
 
 ```bash
 export HOME=$HOME/../..$HOME
-PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)";fi)\[\033[1;34;1m\](\W)\[\033[35m\] 》\[\033[00m\]'
+PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)";fi)\[\033[1;34;1m\](\W)\[\033[35m\]》\[\033[00m\]'
 ```
 
 <img src=".img/glowin3.png">
 
 ```bash
 export HOME=$HOME/../..$HOME
-PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]$ym << ";fi)\[\033[1;32;1m\](\W)\[\033[35m\] 》\[\033[00m\]'
+PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]$ym << ";fi)\[\033[1;32;1m\](\W)\[\033[35m\]》\[\033[00m\]'
 ```
 
 <img src=".img/glowin4.png">
 
 ```bash
 export HOME=$HOME/../..$HOME
-PS1='\[\033[32;1m\](\t)-$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)-";fi)\[\033[1;32;1m\](\W)\[\033[35m\] 》\[\033[00m\]'
+PS1='\[\033[32;1m\](\t)-$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)-";fi)\[\033[1;32;1m\](\W)\[\033[35m\]》\[\033[00m\]'
 ```
 <img src=".img/glowin5.png">
 
 ```bash
 export HOME=$HOME/../..$HOME
-PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)-";fi)\[\033[1;32;1m\](\t)-(\W)\[\033[35m\] 》\[\033[00m\]'
+PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]($ym)-";fi)\[\033[1;32;1m\](\t)-(\W)\[\033[35m\]》\[\033[00m\]'
 ```
 
 <img src=".img/glowin6.png">
 
 ```bash
 export HOME=$HOME/../..$HOME
-PS1='$(if [ $? -ne 0 ];then printf "\[\033[31;1m\](\W)";else printf "\[\033[1;32;1m\](\W)";fi)\[\033[35m\] 》\[\033[00m\]'
+PS1='$(if [ $? -ne 0 ];then printf "\[\033[31;1m\](\W)";else printf "\[\033[1;32;1m\](\W)";fi)\[\033[35m\]》\[\033[00m\]'
 ```
 
-### Airline 
+### Airline
 <img src=".img/airline1.png">
 
 ```bash
@@ -127,14 +128,14 @@ PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[41m\]\[\033[37m\]$ym\[\033[0m\
 
 
 
-                        GNU AFFERO GENERAL PUBLIC LICENSE
-                           Version 3, 19 November 2007
+                            GNU AFFERO GENERAL PUBLIC LICENSE
+                               Version 3, 19 November 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
-                            Preamble
+                                        Preamble
 
   The GNU Affero General Public License is a free, copyleft license for
 software and other kinds of works, specifically designed to ensure
@@ -185,7 +186,7 @@ this license.
   The precise terms and conditions for copying, distribution and
 modification follow.
 
-                       TERMS AND CONDITIONS
+                               TERMS AND CONDITIONS
 
   0. Definitions.
 
