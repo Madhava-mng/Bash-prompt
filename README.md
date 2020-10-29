@@ -5,6 +5,14 @@ bash intrActive FantaC PromptS
       1) open  ~/.bashrc
       2) past the particular code at the end of the "~/.bashrc" file
 
+### Latest
+<img src=".img/glowin_git.png">
+
+```bash
+export HOME=$HOME/../..$HOME
+PS1='${debian_chroot:+($debian_chroot)}$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31m\]$ym ";fi)$(if [ $SHLVL -ne 1 ];then printf "\[\033[36m\]SH_LEVEL:$SHLVL ";fi)\[\033[32;1m\]\u\[\033[0m\]@\[\033[36m\]\h\[\033[32m\](\[\033[32m\]\W\[\033[32m\])$(GIT=$(git branch --show-current 2>/dev/null);printf "\[\033[36;1m\]$GIT\[\033[0m\]")\[\033[35;1m\]> \[\033[00m\]'
+```
+
 ### Glowin
 <img src=".img/glowin1.png">
 
