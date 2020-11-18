@@ -1,7 +1,7 @@
 # Bash-prompt
 bash intrActive FantaC PromptS
 
-### NOTE
+### USAGE
       1) open  ~/.bashrc
       2) past the particular code at the end of the "~/.bashrc" file
 
