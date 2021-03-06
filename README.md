@@ -6,6 +6,55 @@ bash intrActive FantaC PromptS
       2) past the particular code at the end of the "~/.bashrc" file
 
 ### Latest
+<img src=".img/0603.png">
+
+```bash
+ifconfig 1>/dev/null 2>/dev/null
+if [ $? -ne 0 ];then echo -e "ifconfig command not found.\n please install \033[32m'net-tools'\033[0m via package manager";fi
+
+function ip(){
+    a=$(ifconfig 2>/dev/null|grep -w inet|cut -d ' ' -f 10)
+    b=$(echo $a | wc -w)
+    if [ $b -eq 1 ] 2>/dev/null;then
+        c=$(echo $a | cut -d ' ' -f 1)
+    fi
+    if [ $b -eq 2 ] 2>/dev/null;then
+        c=$(echo $a | cut -d ' ' -f 2)
+    fi
+    if [ $b -eq 3 ] 2>/dev/null;then
+        c=$(echo $a | cut -d ' ' -f 3)
+    fi
+    if [ $b -eq 4 ] 2>/dev/null;then
+        c=$(echo $a | cut -d ' ' -f 4)
+    fi
+    echo $c
+}
+
+function config(){
+
+    export Version=$(cat package.json 2>/dev/null|grep version\":|awk '{print $2}'|sed 's/,//g'|sed 's/"//g')
+
+    if [ $(pwd) = /data/data/com.termux/files/usr/etc ] 2>/dev/null;then
+        printf "(config) "   
+    elif [ $(pwd) = /etc ] 2>/dev/null;then
+        printf "(config) "
+    elif [ $(pwd) = /lib ] 2>/dev/null;then
+        printf "(library) "
+    elif [ $(pwd) = ~/.config ] 2>/dev/null;then
+        printf "(config) "
+    elif [ $(pwd) = /data/data/com.termux/files/usr/lib ] 2>/dev/null;then
+        printf "(library) "
+    elif [ $(pwd) = ~/.ssh ] 2>/dev/null;then
+        printf "(ssh-config) "
+    elif [ $Version != '' ] 2>/dev/null;then
+        printf "($Version) "
+    fi
+}
+
+export PS1='$(ym=$?;if [ $ym -ne 0 ];then printf "\[\033[31;1m\]$ym\[\033[0m\] ";fi)\[\033[33;1m\]$(config 2>/dev/null)\[\033[0m\]$(if [ $SHLVL -ne 1 ];then printf "\[\033[2m\]shlvl:$SHLVL\[\033[0m\] ";fi)$(var=$(git branch --show-current 2>/dev/null);if [ $var != "" ] 2>/dev/null;then printf "\[\033[36;1m\]($var) \[\033[0m\]";fi)\[\033[32;1m\]\u@$(ip 2>/dev/null)\[\033[34;1m\]:\w$\[\033[00m\] '
+```
+
+### hook
 <img src=".img/glowin_git.png">
 
 ```bash
