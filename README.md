@@ -6,7 +6,7 @@ bash intrActive FantaC PromptS
       2) past the particular code at the end of the "~/.bashrc" file
 
 ### Latest
-<img src=".img/0603.png">
+<img src=".img/0602.png">
 
 ```bash
 ifconfig 1>/dev/null 2>/dev/null
