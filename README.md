@@ -16,7 +16,7 @@ function ip(){
     a=$(ifconfig 2>/dev/null|grep -w inet|cut -d ' ' -f 10)
     b=$(echo $a | wc -w)
     if [ $b -eq 1 ] 2>/dev/null;then
-        c=$(echo $a | cut -d ' ' -f 1)
+        c='localhost'
     fi
     if [ $b -eq 2 ] 2>/dev/null;then
         c=$(echo $a | cut -d ' ' -f 2)
